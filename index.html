@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEase — a polished student-built e-commerce experience for computer parts, mobile accessories and everyday tech.">
+    <title>ShopEase | Smart Tech Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="announcement"><span>⚡ Student-built tech store</span><span>Free delivery on orders over ₹999</span><a href="#offers">Explore offers →</a></div>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="ShopEase home"><span
+        class="brand-mark">S</span><span>Shop<span>Ease</span></span></a>
+        <nav class="desktop-nav" aria-label="Primary navigation"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#offers">Offers</a><a href="#about">About</a></nav>
+        <div class="header-actions"><button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☼</button><button class="icon-btn" id="accountBtn" aria-label="Account">♙</button><button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">♡<b id="wishCount">0</b></button>
+            <button
+                class="icon-btn" id="cartBtn" aria-label="Cart">🛒<b id="cartCount">0</b></button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+    </header>
+    <div class="mobile-nav" id="mobileNav"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#offers">Offers</a><a href="#about">About</a></div>
+    <main id="home">
+        <section class="hero">
+            <div class="hero-copy"><span class="eyebrow">SMART • SIMPLE • RELIABLE</span>
+                <h1>Upgrade your setup. <span id="heroRotatingText" class="hero-rotating-text" aria-live="polite">Keep it
+            simple.</span></h1>
+                <p>Computer parts, mobile essentials and everyday tech accessories — curated for students, creators and everyday users.
+                </p>
+                <div class="hero-actions"><a class="btn primary" href="#products">Shop now <span>→</span></a><a class="btn ghost" href="#categories">Explore categories</a></div>
+                <div class="trust-row"><span>✓ Curated tech</span><span>✓ Easy checkout</span><span>✓ Responsive design</span>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-glow"></div>
+                <div class="hero-device"><span class="device-screen">S</span><strong>Build your setup</strong><small>Parts •
+            Accessories • Essentials</small></div><span class="float-chip chip-a">16 GB RAM</span><span class="float-chip chip-b">₹799 charger</span><span class="float-chip chip-c">★ 4.9 rated</span>
+            </div>
+        </section>
+        <section class="section stats">
+            <div><strong>8+</strong><span>Featured products</span></div>
+            <div><strong>4.8★</strong><span>Average rating</span></div>
+            <div><strong>3</strong><span>Core categories</span></div>
+            <div><strong>100%</strong><span>Frontend demo</span></div>
+        </section>
+        <section class="section" id="categories">
+            <div class="section-head">
+                <div><span class="eyebrow">SHOP BY CATEGORY</span>
+                    <h2>Find what you need</h2>
+                </div><a href="#products">View all →</a>
+            </div>
+            <div class="category-grid"><button class="category active" data-filter="all"><span>✦</span><strong>All
+            Parts</strong><small>Everything</small></button><button class="category" data-filter="computer"><span>▣</span><strong>Computer</strong><small>RAM, SSD & more</small></button><button class="category" data-filter="mobile"><span>▱</span><strong>Mobile</strong><small>Parts &
+            accessories</small></button><button class="category" data-filter="accessory"><span>◈</span><strong>Accessories</strong><small>Useful add-ons</small></button></div>
+        </section>
+        <section class="section products-section" id="products">
+            <div class="section-head">
+                <div><span class="eyebrow">FEATURED PRODUCTS</span>
+                    <h2>Popular picks</h2>
+                </div>
+                <div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search products..." aria-label="Search products"></div>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+            <p class="empty" id="empty">No products match your search.</p>
+        </section>
+        <section class="promo-grid" id="offers">
+            <article class="promo dark-promo"><span class="eyebrow">WEEKEND DROP</span>
+                <h2>Build faster. Study smarter.</h2>
+                <p>Upgrade your desk with practical tech essentials designed for long study and work sessions.</p><a class="btn light" href="#products">Shop essentials →</a>
+            </article>
+            <article class="promo sale-promo">
+                <div><span class="eyebrow">SAVE MORE</span>
+                    <h2>Bundle your setup</h2>
+                    <p>Add 2+ accessories to your cart and unlock a demo bundle discount at checkout.</p>
+                </div><span class="sale-badge">2+ items<br><strong>10% OFF</strong></span>
+            </article>
+        </section>
+        <section class="section about" id="about">
+            <div><span class="eyebrow">ABOUT SHOEASE</span>
+                <h2>Your original minor project, redesigned for a portfolio.</h2>
+            </div>
+            <p>ShopEase started as a college e-commerce project. This version keeps the original HTML/CSS foundation while adding a cohesive visual system, product interactions, persistent cart and wishlist state, checkout UI and responsive behavior.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="brand"><span class="brand-mark">S</span><span>Shop<span>Ease</span></span>
+        </div>
+        <div class="footer-links"><a href="#products">Shop</a><a href="#offers">Offers</a><a href="#about">About</a><button id="footerAccount">Account</button></div>
+        <p>Built as a VITS CSE minor project.</p><span>© 2026 ShopEase</span>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="drawer-head">
+            <div><span class="eyebrow">YOUR BAG</span>
+                <h3>Shopping Cart</h3>
+            </div><button class="close-btn" data-close="cartDrawer">×</button>
+        </div>
+        <div class="drawer-body" id="cartItems"></div>
+        <div class="drawer-foot">
+            <div><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><small id="shippingNote">Free delivery on
+        ₹999+</small><button class="btn primary checkout" id="checkoutBtn">Proceed to checkout</button>
+        </div>
+    </aside>
+    <aside class="drawer" id="wishDrawer" aria-label="Wishlist">
+        <div class="drawer-head">
+            <div><span class="eyebrow">SAVED FOR LATER</span>
+                <h3>Wishlist</h3>
+            </div><button class="close-btn" data-close="wishDrawer">×</button>
+        </div>
+        <div class="drawer-body" id="wishItems"></div>
+    </aside>
+    <div class="modal-backdrop" id="modalBackdrop">
+        <section class="product-modal product-detail-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close-btn modal-close" data-close="productModal" aria-label="Close product details">×</button>
+            <div class="detail-gallery">
+                <div class="modal-visual" id="modalVisual"></div>
+                <div class="detail-thumb-row" id="modalThumbs"></div>
+            </div>
+            <div class="modal-copy"><span class="eyebrow" id="modalCategory"></span>
+                <h2 id="modalTitle"></h2>
+                <div class="detail-rating" id="modalRating"></div>
+                <p id="modalDescription"></p>
+                <div class="modal-meta"><strong id="modalPrice"></strong><span class="stock-pill">✓ In stock</span></div>
+                <div class="detail-section"><span class="detail-label">Key specifications</span>
+                    <div class="feature-pills" id="modalSpecs"></div>
+                </div>
+                <div class="detail-benefits"><span>↺ 7-day return</span><span>⚡ Fast delivery</span><span>🔒 Secure
+            checkout</span></div>
+                <div class="detail-actions">
+                    <div class="detail-qty"><button id="modalQtyDown" type="button">−</button><strong id="modalQty">1</strong><button id="modalQtyUp" type="button">+</button></div><button class="btn primary" id="modalAdd">Add to cart</button><button class="btn detail-buy" id="modalBuy">Buy now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="modal-backdrop" id="accountBackdrop">
+        <section class="account-modal" role="dialog" aria-modal="true"><button class="close-btn" data-close="accountModal">×</button><span class="brand-mark large">S</span><span class="eyebrow">SHOPEASE
+        ACCOUNT</span>
+            <h2>Welcome back.</h2>
+            <p>Sign in to save your preferences and view your demo orders.</p>
+            <form id="accountForm"><label>Email<input type="email" id="accountEmail" placeholder="you@example.com"
+            required></label><label>Password<input type="password" placeholder="••••••••" required
+            minlength="6"></label><button class="btn primary" type="submit">Sign in</button></form><small>Demo UI only —
+        no real credentials are stored.</small>
+        </section>
+    </div>
+    <div class="modal-backdrop" id="checkoutBackdrop">
+        <section class="checkout-modal" role="dialog" aria-modal="true"><button class="close-btn" data-close="checkoutModal">×</button>
+            <div class="checkout-progress"><span class="active">1. Details</span><span>2. Review</span><span>3. Done</span>
+            </div>
+            <div id="checkoutContent"><span class="eyebrow">DEMO CHECKOUT</span>
+                <h2>Complete your order</h2>
+                <p class="checkout-summary" id="checkoutSummary"></p>
+                <form id="checkoutForm" class="checkout-form">
+                    <div class="form-row"><label>Full name<input id="checkoutName" required
+                placeholder="Aryan Kushwaha"></label><label>Phone<input id="checkoutPhone" required inputmode="numeric"
+                placeholder="10-digit mobile number"></label></div><label>Delivery address<textarea id="checkoutAddress"
+              required placeholder="House / street / city / state"></textarea></label>
+                    <div class="payment-options"><label><input type="radio" name="payment" value="cod" checked> Cash on
+              delivery</label><label><input type="radio" name="payment" value="upi"> UPI demo</label><label><input
+                type="radio" name="payment" value="card"> Card demo</label></div><button class="btn primary" type="submit">Place demo order →</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
