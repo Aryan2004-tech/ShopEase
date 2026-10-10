@@ -1,4 +1,4 @@
-# ShopEase — Polished v4
+# ShopEase
 
 ShopEase is a frontend-only e-commerce minor project redesigned as a portfolio-ready student project.
 
